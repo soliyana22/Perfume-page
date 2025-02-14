@@ -21,7 +21,14 @@
 <body>
   <div class="container">
     <div class="main_container">
-      <div class="image_part"><img src="images/image-product-mobile.jpg"></div>
+      <div class="image_part">
+        <picture>
+          <source media="(min-width:650px)" srcset="images/image-product-desktop.jpg">
+          <source media="(min-width:465px)" srcset="images/image-product-mobile.jpg">
+          <source media="(min-width:300px)" srcset="images/image-product-mobile.jpg">
+          <img src="images/image-product-mobile" alt="Flowers" style="width:auto;">
+          </picture> 
+      </div>
       <div class="text_inner">
         <div class="text_main">
       <h5>PERFUME</h5>
